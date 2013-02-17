@@ -47,6 +47,7 @@ rm -rf wpa_supplicant_hostapd-0.8
 rm -rf $wpafolder
 
 gcc -o P2P_UI ./p2p_api_test_linux.c ./p2p_ui_test_linux.c -lpthread
+gcc -o P2P_NO_UI ./p2p_no_ui_api_test_linux.c ./p2p_no_ui_test_linux.c -lpthread
 
 if [ ! -e ./p2p_hostapd.conf ]; then
         echo "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
