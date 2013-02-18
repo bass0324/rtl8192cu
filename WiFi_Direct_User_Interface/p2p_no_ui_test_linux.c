@@ -229,7 +229,7 @@ int main(int argc, char **argv)
 		
 		/* Set Intent 1 (option i) */
 		printf("Set Intent 1\n");
-		p->intent = 1;
+		p->intent = 15;
 		p2p_intent(p);
 		
 		/* Scan Wi-Fi Direct Devices (option a) */
