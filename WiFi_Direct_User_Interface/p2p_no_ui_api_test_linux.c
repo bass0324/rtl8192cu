@@ -443,7 +443,7 @@ void p2p_devaddr(struct p2p *p)
 	pscan_pool = &p->scan_pool[c-1];
 	/******** comment out above, add below ********/
 	//pscan_pool = 32:85:A9:2F:4F:D7;
-	strncpy(p->peer_devaddr, ",32:85:A9:2F:4F:D7" 17);
+	strncpy(p->peer_devaddr, "32:85:A9:2F:4F:D7" 17);
 
 	if( pscan_pool->go == 1)
 		p->connect_go = 1;
