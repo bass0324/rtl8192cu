@@ -221,26 +221,26 @@ int main(int argc, char **argv)
   
 	//do
 	//{
-		/********** Enable P2P (option e) **********/
+		/* Enable P2P (option e) */
 		printf("Enable P2P\n");
-		p->enable = 1;
-		//p2p_enable(p); /********** not needed since enabled above **********/
+		p->enable = P2P_ROLE_DEVICE;
+		p2p_enable(p);
 		p->show_scan_result=1;
 		
-		/********** Set Intent 1 (option i) **********/
+		/* Set Intent 1 (option i) */
 		printf("Set Intent 1\n");
 		p->intent = 1;
 		p2p_intent(p);
 		
-		/********** Scan Wi-Fi Direct Devices (option a) **********/
-		printf("Scaning for Wi-Fi Direct Devices\n");
-		p2p_scan(p);
+		/* Scan Wi-Fi Direct Devices (option a) */
+		//printf("Scaning for Wi-Fi Direct Devices\n");
+		//p2p_scan(p);
 		
-		/********** Set Peer Device Address (option m) **********/
+		/* Set Peer Device Address (option m) */
 		printf("Set Peer Device Address\n");
-		p2p_devaddr(p)
+		p2p_devaddr(p);
 		
-		/********** Provision Discovery (option p) **********/
+		/* Provision Discovery (option p) */
 		printf("Provision Discovery\n");
 		char msg[CMD_SZ];
 		memset( msg, 0x00, CMD_SZ );

@@ -439,11 +439,11 @@ void p2p_devaddr(struct p2p *p)
 	p->p2p_get=0;
 	
 	//scanf("%d", &c);
-	c = 1
+	c = 1;
 	pscan_pool = &p->scan_pool[c-1];
 	/******** comment out above, add below ********/
-	// pscan_pool = (address of nexus);
-	strncpy(p->peer_devaddr, pscan_pool->addr, 17);
+	//pscan_pool = 32:85:A9:2F:4F:D7;
+	strncpy(p->peer_devaddr, ",32:85:A9:2F:4F:D7" 17);
 
 	if( pscan_pool->go == 1)
 		p->connect_go = 1;
