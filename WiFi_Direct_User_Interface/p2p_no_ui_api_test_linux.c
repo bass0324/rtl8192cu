@@ -968,7 +968,7 @@ void p2p_go_mode(struct p2p *p)
 
 			usleep(50000);
 			
-			system( "/etc/rc.d/init.d/dhcpd start" );
+			system( "dhcpd start" );
 			system( "clear" );
 #endif //DHCP
 
