@@ -2,6 +2,7 @@
 #include "p2p_test.h"
 
 #define P2P_AUTO 1
+#define DHCP 1
 
 unsigned int wps_pin_checksum(unsigned int pin)
 {
