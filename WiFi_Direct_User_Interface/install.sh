@@ -1,27 +1,30 @@
 
-if [ -e ../wpa_supplicant_hostapd/wpa_supplicant_hostapd-0.8_rtw_20111118.zip ]; then
+if [ -e ../wpa_supplicant_hostapd/wpa_supplicant_hostapd-0.8_rtw_20120803.zip ]
+	then
         echo "Checking wpa_supplicant_hostapd-0.8_rtw_20111118.zip"
 else
         echo "wpa_supplicant_hostapd-0.8_rtw_20111118.zip doesn't exist in corresponding folder"
         exit
 fi
 
-if [ -e ../wpa_supplicant_hostapd/p2p_hostapd.conf ]; then
+if [ -e ../wpa_supplicant_hostapd/p2p_hostapd.conf ]
+	then
         echo "Checking p2p_hostapd.conf"
 else
         echo "p2p_hostapd.conf doesn't exist in corresponding folder"
         exit
 fi
 
-if [ -e ../wpa_supplicant_hostapd/wpa_0_8.conf ]; then
+if [ -e ../wpa_supplicant_hostapd/wpa_0_8.conf ]
+	then
         echo "Checking wpa_0_8.conf"
 else
         echo "wpa_0_8.conf doesn't exist in corresponding folder"
         exit
 fi
 
-cp ../wpa_supplicant_hostapd/wpa_supplicant_hostapd-0.8_rtw_20111118.zip ./
-wpafolder='wpa_supplicant_hostapd-0.8_rtw_20111118.zip'
+cp ../wpa_supplicant_hostapd/wpa_supplicant_hostapd-0.8_rtw_20120803.zip ./
+wpafolder='wpa_supplicant_hostapd-0.8_rtw_20120803.zip'
 echo "  "$wpafolder
 unzip $wpafolder
 
