@@ -202,6 +202,12 @@ int main(int argc, char **argv)
 	struct p2p p2pstruct;
 	struct p2p *p=NULL;
 
+   if ( argc != 2 )
+   {
+      printf( "usage: %s <ifname>\n", argv[0] );
+      return 1;
+   }
+
 	p = &p2pstruct;	
 	if( p != NULL)
 	{
